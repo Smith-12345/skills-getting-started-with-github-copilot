@@ -47,6 +47,11 @@ def root():
     return RedirectResponse(url="/static/index.html")
 
 
+@app.get("/journey")
+def journey():
+    return RedirectResponse(url="/static/journey.html")
+
+
 @app.get("/activities")
 def get_activities():
     return activities
